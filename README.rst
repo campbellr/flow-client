@@ -35,6 +35,7 @@ Polar Flow credentials and fetch activities with the ``activities`` method:
     >>>
     >>> client = FlowClient()
     >>> client.login('username@example.com', 'password')
+    >>> # no arguments will fetch all activities in the last 30 days
     >>> activity = client.activities()[0]
     >>> print activity
     Activity(63464689)
