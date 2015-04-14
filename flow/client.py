@@ -14,6 +14,13 @@ ACTIVITIES_URL = "{}/training/getCalendarEvents".format(FLOW_URL)
 logger = logging.getLogger(__name__)
 
 
+# TODO: look into this url for gathering training data:
+#    https://flow.polar.com/training/analysis/<id>/range/data
+#    https://flow.polar.com/training/analysis/71760805/range/data
+# TODO: look into this url for gathering activity data:
+#    https://flow.polar.com/activity/data/<end>/<start>
+#    eg: https://flow.polar.com/activity/data/30.3.2015/10.5.2015
+
 class FlowClient(object):
 
     """Interact with the (unofficial) Polar Flow API."""
@@ -31,6 +38,9 @@ class FlowClient(object):
         if resp.status_code != 200:
             resp.raise_for_status()
 
+    # FIXME: these aren't really activities as Flow defines them, they're
+    # training sessions?
+    # activity is the activity tracking stuff
     def activities(self, *args, **kwargs):
         """Return all activities between ``start_date`` and ``end_date``.
 

@@ -13,7 +13,9 @@ Features
 ========
 
 * Fetch a list of activities within given date range
-* Fetch the TCX file for any activity
+* Fetch the TCX file for any training session
+* Fetch raw training session data (**TODO**)
+* Fetch activity data (steps, goal, etc...) (**TODO**)
 
 Install
 =======
