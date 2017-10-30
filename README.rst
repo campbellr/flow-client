@@ -4,10 +4,8 @@ Flow
 
 A python client for `Polar Flow`_.
 
-**NOTE:** This currently uses unsupported APIs (the same APIs that the
-Polar Flow web app uses) so can break at any moment. Ideally we would
-use `Polar AccessLink`_ but it requires approval from Polar, which I
-haven't been able to get yet.
+**NOTE:** This project was created before Polar opened their `Polar AccessLink API`_. You are *much* better off using that.
+An official python example can be found at https://github.com/polarofficial/accesslink-example-python
 
 Features
 ========
@@ -67,4 +65,4 @@ an issue in our `issue tracker`_.
 
 .. _Polar Flow: https://flow.polar.com
 .. _issue tracker: https://github.com/campbellr/flow-client/issues
-.. _Polar AccessLink: http://www.polar.com/en/connect_with_polar/polar_accesslink
+.. _Polar AccessLink API: https://www.polar.com/en/accesslink
